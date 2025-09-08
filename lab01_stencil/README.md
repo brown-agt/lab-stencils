@@ -52,10 +52,9 @@ python3 -m venv .venv
 .venv\Scripts\activate
 ```
 
-### Step 3: Install the agt server package
+### Step 3: Install requirements
 ```bash
-pip install --upgrade pip
-pip install --upgrade agt-lab-server
+pip install -r requirements.txt
 ```
 
 ## Agent Methods 
