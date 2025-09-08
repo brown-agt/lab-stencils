@@ -1,0 +1,2 @@
+numpy>=1.21.0 
+agt-lab-server>=0.1.0
