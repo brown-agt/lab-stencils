@@ -58,6 +58,7 @@ python -m venv .venv
 
 ### Step 3: Install requirements
 ```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
