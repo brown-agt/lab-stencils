@@ -30,13 +30,18 @@ class BeliefStateQLearningAgent(LemonadeAgent):
         # Features: belief state [a, b, 1]
         self.num_features = 3
         self.num_actions = 12
+        # NOTE: Unlike the theory in handout, here we use a different weight vector for each action, but use phi(s) instead of phi(s,a).
+        # This is a common simplification in practice.
         self.weights = np.random.normal(0, 0.1, (self.num_actions, self.num_features))
         
         self.prev_features = None
         self.prev_action = None
         
     def belief_to_features(self, belief):
-        """Convert belief state [a, b, 1] to features"""
+        """
+        Convert belief state [a, b, 1] to features
+        Here, we simply use the belief state as the feature vector.
+        """
         return belief
     
     def get_q_values(self, belief):
