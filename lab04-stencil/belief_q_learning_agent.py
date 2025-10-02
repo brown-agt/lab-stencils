@@ -22,7 +22,7 @@ class BeliefStateQLearningAgent(LemonadeAgent):
             1: {3: 0.3, 9: 0.7}
         }
         
-        # Q-learning parameters
+        # Q-learning parameters. Feel free to tune these!
         self.alpha = 0.1
         self.gamma = 0.9
         self.epsilon = 0.3
