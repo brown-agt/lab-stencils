@@ -11,7 +11,8 @@ import numpy as np
 
 class BeliefStateQLearningAgent(LemonadeAgent):
     def setup(self):
-        # Initialize belief state: [a, b, 1] where a,b are type probabilities
+        # Initialize belief state: [a, b, 1] where a,b are type probabilities (i.e. prob that the mystery agent is 
+        # type 3 and type 9 respectively).
         # The third number is the sticky position for the 'dummy' agent.
         self.b = np.array([0.5, 0.5, 1.0])
         
@@ -55,10 +56,18 @@ class BeliefStateQLearningAgent(LemonadeAgent):
         self.prev_action = action
         return action
     
+    def update_belief(self, observation):
+        # helper function called update_belief(self, observation), use code from Task 1
+        pass
+
     def update(self):
-        # TODO: Update the belief given your opponent's actions.
-        # Hint: put the code from Part 1 into a helper function.
+        # TODO: 
+        # Task 4: Update the belief given your opponent's actions.
+        # Hint: put the code from Task 1 into a helper function called update_belief(self, observation)
         # Note our belief state has a third index for the sticky 'dummy' agent here.
+        opp_action = self.get_opp1_last_action()
+        if opp_action is not None:
+            self.update_belief(opp_action)
 
         # TODO: Use the standard weight update function for Q-learning.
         pass

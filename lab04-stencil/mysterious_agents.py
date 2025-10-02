@@ -24,7 +24,8 @@ class MysteriousBot(LemonadeAgent):
     def update(self):
         pass
 
-# TODO: Modify the mysterious agent in various ways.
+# TODO: 
+# Task 3: Modify the mysterious agent in various ways.
 class MysteriousBot2(LemonadeAgent):
     def setup(self):
         pass
@@ -33,7 +34,8 @@ class MysteriousBot2(LemonadeAgent):
     def update(self):
         pass
 
-# TODO: Fill out this mystery agent to play Tit-for-tat!
+# TODO: 
+# Task 5: Fill out this mystery agent to play Tit-for-tat!
 # Tit-for-tat is a strategy in which a player begins cooperating but then
 # subsequently mirrors their opponent's actions.
 class MysteriousBotTitForTat(LemonadeAgent):
