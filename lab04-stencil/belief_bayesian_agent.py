@@ -28,6 +28,7 @@ class BeliefAgent(LemonadeAgent):
 
     def get_action(self):
         # TODO: Find the optimal policy in expectation given the current belief state.
+        # Hint: there are a lot of valid ways to approach this, some simpler than others.
 
         best_action = None
         return best_action
@@ -39,7 +40,7 @@ class BeliefAgent(LemonadeAgent):
         
         The belief update is:
             b'(s') = O(observation | s') * b(s') / N
-        where N = sum_{s''} O(observation | s'') * b(s'').
+        where N = sum_{s''} O(observation | s'') * b(s''). (a normalization constant)
         """
         if not(self.get_opp1_last_action()):
             pass

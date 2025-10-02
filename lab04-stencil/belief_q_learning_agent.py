@@ -56,8 +56,9 @@ class BeliefStateQLearningAgent(LemonadeAgent):
         return action
     
     def update(self):
-        # TODO: Update the belief given your opponent's actions. Hint: put the code from Part 1
-        #                                                               into a helper function.
+        # TODO: Update the belief given your opponent's actions.
+        # Hint: put the code from Part 1 into a helper function.
+        # Note our belief state has a third index for the sticky 'dummy' agent here.
 
         # TODO: Use the standard weight update function for Q-learning.
         pass

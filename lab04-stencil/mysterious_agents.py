@@ -6,14 +6,6 @@ from agt_server.agents.test_agents.lemonade.decrement_agent.my_agent import Decr
 from agt_server.agents.test_agents.lemonade.increment_agent.my_agent import IncrementAgent
 import random
 
-class DummyBot(LemonadeAgent):
-    def setup(self):
-        self.spot = 0
-    def get_action(self):
-        return self.spot
-    def update(self):
-        pass
-
 class MysteriousBot(LemonadeAgent):
     def setup(self):
         self.agent_type = random.choice(['type3', 'type9'])
@@ -32,6 +24,35 @@ class MysteriousBot(LemonadeAgent):
     def update(self):
         pass
 
+# TODO: Modify the mysterious agent in various ways.
+class MysteriousBot2(LemonadeAgent):
+    def setup(self):
+        pass
+    def get_action(self):
+        pass
+    def update(self):
+        pass
+
+# TODO: Fill out this mystery agent to play Tit-for-tat!
+# Tit-for-tat is a strategy in which a player begins cooperating but then
+# subsequently mirrors their opponent's actions.
+class MysteriousBotTitForTat(LemonadeAgent):
+    def setup(self):
+        pass
+    def get_action(self):
+        pass
+    def update(self):
+        pass
+
+# ----------------------------
+class DummyBot(LemonadeAgent):
+    def setup(self):
+        self.spot = 0
+    def get_action(self):
+        return self.spot
+    def update(self):
+        pass
+
 class RandomAgent(LemonadeAgent):
     def setup(self):
         pass
@@ -39,10 +60,16 @@ class RandomAgent(LemonadeAgent):
         return random.randint(0, 11)
     def update(self):
         pass
+# ----------------------------
 
 randomagent = RandomAgent("Random")
-mysteriousagent = MysteriousBot("Mysterious")
 dummyagent = DummyBot("Sticky")
+
+# This agent is exported to belief_bayesian_agent.py and belief_q_learning.agent.py.
+# To test your mystery agents, you can change the class of mysteriousagent here
+# or just import the class definition in the respective files and create a new
+# instance of your new mysteryagent.
+mysteriousagent = MysteriousBot("Mysterious")
 
 # Run this file to see how these agents compete
 arena = LemonadeArena(
