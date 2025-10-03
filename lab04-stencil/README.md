@@ -36,7 +36,7 @@ pip install torch
 
 ## Agent Methods 
 For the `Lemonade Agent`s here are a few methods that you may find helpful! 
-- `self.calculate_utils(a1, a2, a3)` is a method that takes in player 1's action (`a1`) and player 2's action (`a2`) and player 3's action (`a3`) and returns a list [`u1`, `u2`, `u3`] where `u1` is player1's utility, `u2` is player 2's utility, and `u3` is player 2's utility. 
+- `self.calculate_utility(a1, a2, a3)` is a method that takes in player 1's action (`a1`) and player 2's action (`a2`) and player 3's action (`a3`) and returns a list [`u1`, `u2`, `u3`] where `u1` is player1's utility, `u2` is player 2's utility, and `u3` is player 2's utility. 
 - `self.get_action_history()` is a method that returns a list of your actions from previous rounds played.
 - `self.get_util_history()` is a method that returns a list of your utility from previous rounds played. 
 - `self.get_opp1_action_history()` is a method that returns a list of your first opponents's actions from previous rounds played.
