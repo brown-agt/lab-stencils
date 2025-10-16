@@ -50,5 +50,9 @@ If you own a Windows
 python3 -m venv .venv
 .venv\Scripts\activate
 ```
+### Step 3: Install Library
+```bash
+pip install agt-server
+```
 
 **Note:** There will be no live competition for this lab! 
