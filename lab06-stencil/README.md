@@ -30,10 +30,10 @@ If you own a Windows
 py -3.11 -m venv .venv
 ```
 
-### Step 1: Git Clone the Repository 
-Open your terminal and navigate to where you want to clone the repository
+### Step 1: Git Pull
+Open your terminal and navigate to where you have cloned the lab-stencils repository
 ```bash 
-git clone https://github.com/brown-agt/lab06-stencil.git
+git pull
 ```
 
 ### Step 2: Create a Virtual Environment
