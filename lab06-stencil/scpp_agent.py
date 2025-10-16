@@ -129,7 +129,7 @@ if __name__ == "__main__":
         arena = SAArena(
             timeout=1,
             num_goods=3,
-            num_rounds=100,
+            num_rounds=1000,
             kth_price=2,
             valuation_type="complement",
             players=[
