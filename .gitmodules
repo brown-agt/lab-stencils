@@ -1,0 +1,3 @@
+[submodule "lab07-stencil"]
+	path = lab07-stencil
+	url = https://github.com/brown-agt/lab07-stencil.git
