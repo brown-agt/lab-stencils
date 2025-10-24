@@ -78,15 +78,13 @@ class SCPPAgent(SimultaneousAuctionAgent):
         bids = ???
         return bids
 
-    def update(self):        
-        other_bids_raw = self.game_report.game_history['opp_bid_history'][-1]
+    def update(self):
+        price_history = self.get_price_history()
+        if not price_history:
+            return
         
-        predicted_prices = {}
-        
-        for good in self.goods:
-            predicted_prices[good] = ???
-            
-        if predicted_prices:
+        observed_prices = price_history[-1]
+        if observed_prices:
             # TODO: insert prices into self.curr_distibution
             # TODO: update simulation_count
             pass
