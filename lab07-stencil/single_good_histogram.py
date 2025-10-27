@@ -44,6 +44,8 @@ class SingleGoodHistogram:
         """ 
         Return a random sample from the histogram. 
         """
+        # We need to handle the edge case when self.total == 0.
+        # One solution is returning a uniform sample from 0 to self.bid_upper_bound.
         raise NotImplementedError
 
     

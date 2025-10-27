@@ -91,7 +91,7 @@ class SCPPAgent(SimultaneousAuctionAgent):
             
             if self.simulation_count % self.NUM_SIMULATIONS_PER_ITERATION == 0:
                 # TODO: Update the learned distribution with the newly gathered data
-                # TODO: Reset the current distribution
+                # TODO: Reset the current distribution using create_independent_histogram
                 # TODO: Save the learned distribution to disk (for use in live auction mode).
                 # save learned_distribution to disk.
                 pass
