@@ -1,17 +1,13 @@
-import sys, os
-# Add the core directory to the path (same approach as server.py)
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
-
-from core.game.AdxOneDayGame import OneDayBidBundle, AdxOneDayGame
-from core.game.bid_entry import SimpleBidEntry
-from core.game.market_segment import MarketSegment
-from core.game.campaign import Campaign
+from agt_server.core.game.AdxOneDayGame import OneDayBidBundle, AdxOneDayGame
+from agt_server.core.game.bid_entry import SimpleBidEntry
+from agt_server.core.game.market_segment import MarketSegment
+from agt_server.core.game.campaign import Campaign
 from typing import Dict, Any
-from server.connect_stencil import connect_agent_to_server
-from core.agents.lab08.random_agent import RandomAdXAgent
-from core.agents.lab08.aggressive_bidding_agent import AggressiveBiddingAgent
-from core.local_arena import LocalArena
-from core.agents.common.base_agent import BaseAgent
+from agt_server.server.connect_stencil import connect_agent_to_server
+from agt_server.core.agents.lab08.random_agent import RandomAdXAgent
+from agt_server.core.agents.lab08.aggressive_bidding_agent import AggressiveBiddingAgent
+from agt_server.core.local_arena import LocalArena
+from agt_server.core.agents.common.base_agent import BaseAgent
 
 class MyAdXAgent(BaseAgent):
     """
