@@ -2,6 +2,8 @@
 
 This lab implements an agent for the Trading Agent Competition (TAC) Ad Exchange game in a simplified one-day format.
 
+**IMPORTANT: This lab runs on the new AGT server. Create a new virtual environment using the steps below. Make sure that you read step 3.**
+
 ## Setup and Installation
 
 Follow these steps to set up your environment and install the necessary package for the lab.
